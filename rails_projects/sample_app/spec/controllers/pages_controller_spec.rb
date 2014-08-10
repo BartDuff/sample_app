@@ -26,5 +26,13 @@ RSpec.describe PagesController, :type => :controller do
     	end
                                           
 	end
+	
+	describe "GET help" do
+        it "devrait réussir" do
+        get :help
+        expect(response).to be_success
+    	end
+                                          
+	end
                                           
 end 
